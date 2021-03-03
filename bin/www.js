@@ -1,7 +1,7 @@
 /**
  * Created by zhangmiao on 2018/6/20.
  */
-var PORT = 50000;
+var PORT = 3000;
 var http=require('http');
 var https=require('https');
 var url = require("url");
