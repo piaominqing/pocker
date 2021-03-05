@@ -4,10 +4,5 @@ services:
       container_name: app-pm2
       #构建容器
       build: ./login
-      #直接从git拉去
-      # build: git@github.com:su37josephxia/docker_ci.git#:backend
-      # 需要链接本地代码时
-      # volumes:
-      #   - ./backend:/usr/src/app
       ports:
         - "3000:3000"
