@@ -1,0 +1,26 @@
+{
+    "deploy": {
+        "packages": [{
+            "files": [
+                "**/*",
+            ],
+
+            "exclude": [
+                "node_modules/**",
+                ".git/**",
+                ".vscode/**",
+                "**/node_modules/**",
+            ],
+            "deployOnSave": false
+        }],
+        "targets": [{
+            "type": "sftp",
+            "name": "TencentServer",
+            "dir": "/root/source/docker/node/pocker_login",
+            "host": "119.29.181.68",
+            "port": 22,
+            "user": "ubuntu",
+            "privateKey": "/Users/nhn/.ssh/pocker.pem"
+        }],
+    },
+}
