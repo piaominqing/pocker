@@ -7,4 +7,5 @@ RUN npm config set registry https://registry.npm.taobao.org/ && \
 EXPOSE 3000
 #pm2在docker中使用命令为pm2-docker
 # CMD ["pm2-runtime", "start", "--json", "process.json"]
+# deploy test
 CMD ["pm2-runtime", "start",  "process.yml"]
