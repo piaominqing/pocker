@@ -80,8 +80,10 @@ var server = http.createServer(function(req, res){
             }
             var rsp = {};
             rsp.uid = uid;
-            res.write(JSON.stringify(rsp));
-            res.end();
+            // res.write(JSON.stringify(rsp));
+            // res.end();
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end('响应内容');
         });
     }
 });
